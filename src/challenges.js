@@ -41,14 +41,21 @@ function createSequence(number) {
 // Iteration 3 | Multiply for Each
 const numbers = [1, 2, 5, 10, 13, 50];
 
-function multiplyBy(arrayNumbers, multiPlayer ) {
+// function multiplyBy(arrayNumbers, multiPlayer) {
+//   let result = [];
+//   for ( let i = 0; i < arrayNumbers.length; i++) {
+//     result.push(number[i]*multiPlayer);
+//   }
+//   return result;
+// }
+
+function multiplyBy (arrayNumbers, multiPlayer) {
   let result = [];
-  for ( let i = 0; i < arrayNumbers.length; i++) {
-    result.push(number[i]*multiPlayer);
-  }
+  arrayNumbers.forEach(function (number) {
+    result.push(number*multiPlayer);
+  })
   return result;
 }
-
 
 
 
